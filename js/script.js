@@ -7,15 +7,15 @@ const row = document.querySelector(".row");
 
 for (var i=1; i <= 100; i++) {
 
-    let result = "";
+    let result = i;
 
     if (i % 15 == 0) {
-        result = "FizzBuzz";
+        result = "fizzbuzz";
     } else if (i % 3 == 0) {
-        result = "Fizz"; 
+        result = "fizz"; 
     } else if (i % 5 == 0) {
-        result = "Buzz";
-    }
+        result = "buzz";
+    } 
 
     console.log(result);
 
