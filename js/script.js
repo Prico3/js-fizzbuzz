@@ -19,6 +19,9 @@ for (var i=1; i <= 100; i++) {
 
     console.log(result);
 
+    const cell = `<div class="cell ${result}">${i}</div>`;
+    row.innerHTML += cell;
 }
-const cell = `<div class="cell ${result}">${i}</div>`;
-row.innerHTML += cell;
+
+
+
