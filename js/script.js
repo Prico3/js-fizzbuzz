@@ -5,22 +5,35 @@
 
 const row = document.querySelector(".row");
 
-for (var i=1; i <= 100; i++) {
+for (let i=1; i <= 100; i++) {
 
     let result = i;
+    let numberClass = "";
 
-    if (i % 15 == 0) {
+    if (i % 15 === 0) {
         result = "fizzbuzz";
-    } else if (i % 3 == 0) {
+        numberClass = "bg-lime"
+    } else if (i % 3 === 0) {
         result = "fizz"; 
-    } else if (i % 5 == 0) {
+        numberClass = "bg-pink"
+    } else if (i % 5 === 0) {
         result = "buzz";
+        numberClass = "bg-seagreen"
     } 
 
-    console.log(result);
+    // console.log(result);
 
-    const cell = `<div class="cell ${result}">${i}</div>`;
-    row.innerHTML += cell;
+    const box = `<div class="box ${numberClass}">${result}</div>`;
+    row.innerHTML += box;
+
+    // const box = document.createElement("div");
+    // box.innerHTML = result;
+    // box.classList.add("box");
+    // if (numberClass !== ""){
+
+    //     box.classList.add(numberClass);
+    // }
+    // row.append(box);
 }
 
 

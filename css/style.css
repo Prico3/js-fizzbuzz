@@ -11,10 +11,14 @@
 
 .row {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.cell {
+
+
+.box {
     width: calc(100% / 5);
     height: 100px;
     background-color: lightblue;
@@ -26,14 +30,14 @@
 
 }
 
-.buzz {
+.bg-pink {
     background-color: pink;
 }
 
-.fizz {
+.bg-seagreen {
     background-color: lightseagreen;
 }
 
-.fizzbuzz {
+.bg-lime {
     background-color: lime;
 }
